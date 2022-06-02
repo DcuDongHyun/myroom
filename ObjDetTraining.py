@@ -25,6 +25,7 @@ class ExMain(QWidget):
         super().__init__()
         self.x = None
         self.y = None
+        self.event=None
         """super().__init__()의 의미 : 부모 클래스(super class)의 생성자를 쓴다는 의미"""
         #self.setMouseTracking(True)  # 마우스 트레킹(추적)을 위해 선언, True일떄는 모든 움직임 감시, False는 클릭 시 동
         hbox = QGridLayout()
@@ -38,8 +39,17 @@ class ExMain(QWidget):
         self.setLayout(hbox)
         """hbox에 설정된 Layout셋팅 하는 명령어"""
         # self.setGeometry(300, 100, 1000, 1000)  # x, y, width, height
-        # canvas에서 마우스 클릭 시그널 발생하면 onClick 함수 호출(연결)
+        # canvas화면(scene)에서 마우스 클릭 시그널 발생 시 onClick 함수 호출(연결)
         self.canvas.scene().sigMouseClicked.connect(self.onClick)
+        #점 삭제를 위한 버튼 추가
+        btnRun = QPushButton("전체 삭제", self)
+        btnRun.clicked.connect(self.allDelete)
+        btnRun2 = QPushButton("부분 삭제", self)
+        btnRun2.move(110,0)
+        btnRun2.clicked.connect(self.delete)
+        btnRun3 = QPushButton("점 생성", self)
+       # btnRun3.clicked.connect(self.creatPoint)
+        btnRun3.move(220, 0)
         self.view = self.canvas.addViewBox()
         """view = canvas에 viewbox를 추가한 객체"""
         self.view.setAspectLocked(True)
@@ -60,8 +70,10 @@ class ExMain(QWidget):
         self.spt = pg.ScatterPlotItem(pen=pg.mkPen(width=1, color='r'), symbol='o', size=2)
         """scatter형태로 pg(파이썬 그래프), 에 추가할 내용 spt에 저장, pen의 형태는 너비 =1, 색은 red, 심볼(형태)는 동그라미, 크기는 2 """
         self.mpt = pg.ScatterPlotItem(pen=pg.mkPen(width=1, color='b'), symbol='o', size=10)
+        self.ppt = pg.ScatterPlotItem(pen=pg.mkPen(width=1, color='g'), symbol='o', size=10)
         self.view.addItem(self.spt)
         self.view.addItem(self.mpt)
+        self.view.addItem(self.ppt)
         """spt에 저장된 내용 뷰에 추가"""
         """QtGui 지원 2022.05 일자로 종료 따라서, QtGui -> QtWidgets 로 변경 """
 
@@ -235,13 +247,39 @@ class ExMain(QWidget):
 
     #마우스 좌표에 점 찍고 위치 저장 및 점 유지
     def onClick(self, event):
+        self.event=event
         mousePoint = self.view.mapSceneToView(event._scenePos)
         print("relative pos")
         print(mousePoint.x(), mousePoint.y())
-        test_list = [[mousePoint.x(), mousePoint.y(), 0, 0]]
+        #test_list는 setData.pos에 배열 or 튜플 형태를 넣어야 함으로 튜플 형태로 저
+        test_list = [[mousePoint.x(), mousePoint.y()]]
         self.mymousePoints += test_list
         self.mpt.setData(pos=self.mymousePoints)
         print(self.mymousePoints)
+
+    def allDelete(self):
+        self.mymousePoints = []
+        self.mpt.setData(pos=self.mymousePoints)
+
+    def delete(self):
+        if(self.event != None):
+            event=self.event
+            mousePoint2 = self.view.mapSceneToView(event._scenePos)
+            test2_list= [[mousePoint2.x(),mousePoint2.y()]]
+            mousePoint3=list()
+            mousePoint3 += test2_list
+            list1 = self.mymousePoints
+            #list1 에 저장된 리스트속 첫번째, 두번째 원소 자료형 변경
+            list2=[[int(i[0]),int(i[1])] for i in list1]
+            mousePoint4=[[int(i[0]),int(i[1])] for i in mousePoint3]
+            print("*"*50)
+            print(mousePoint4)
+            print(list2)
+            # for i in list2:
+            #     if mousePoint4[0][0] == list2[0][i]:
+            #         del list2[0][i]
+            #         self.mymousePoints = list1 - list2
+            #         break
 
 
 if __name__ == "__main__":
