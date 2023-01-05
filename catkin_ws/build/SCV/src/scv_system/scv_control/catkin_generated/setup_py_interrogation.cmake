@@ -1,0 +1,7 @@
+set(scv_control_SETUP_PY_SETUP_MODULE "distutils.core")
+set(scv_control_SETUP_PY_VERSION "0.0.1")
+set(scv_control_SETUP_PY_SCRIPTS "")
+set(scv_control_SETUP_PY_PACKAGES "test_package")
+set(scv_control_SETUP_PY_PACKAGE_DIRS "src/controller/test_package")
+set(scv_control_SETUP_PY_MODULES "")
+set(scv_control_SETUP_PY_MODULE_DIRS "")

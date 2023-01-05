@@ -1,0 +1,8 @@
+prefix=/home/dong/catkin_ws/devel
+
+Name: scv_control
+Description: Description of scv_control
+Version: 0.0.1
+Cflags: -I/home/dong/catkin_ws/src/SCV/src/scv_system/scv_control/include
+Libs: -L${prefix}/lib -lscv_control
+Requires: roscpp std_msgs

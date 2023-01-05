@@ -1,0 +1,8 @@
+prefix=/home/dong/catkin_ws/devel
+
+Name: pyqt5
+Description: Description of pyqt5
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
