@@ -67,14 +67,14 @@ set(data_analyze_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(data_analyze_SOURCE_PREFIX /home/dong/catkin_ws/src/SCV/src/scv_system/data_analyze)
-  set(data_analyze_DEVEL_PREFIX /home/dong/catkin_ws/devel)
+  set(data_analyze_SOURCE_PREFIX /home/dong/myroom/catkin_ws/src/SCV/src/scv_system/data_analyze)
+  set(data_analyze_DEVEL_PREFIX /home/dong/myroom/catkin_ws/devel)
   set(data_analyze_INSTALL_PREFIX "")
   set(data_analyze_PREFIX ${data_analyze_DEVEL_PREFIX})
 else()
   set(data_analyze_SOURCE_PREFIX "")
   set(data_analyze_DEVEL_PREFIX "")
-  set(data_analyze_INSTALL_PREFIX /home/dong/catkin_ws/install)
+  set(data_analyze_INSTALL_PREFIX /home/dong/myroom/catkin_ws/install)
   set(data_analyze_PREFIX ${data_analyze_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dong/catkin_ws/install/lib;/home/dong/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dong/myroom/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

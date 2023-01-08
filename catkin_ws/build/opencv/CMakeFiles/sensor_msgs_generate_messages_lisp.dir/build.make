@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dong/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/dong/myroom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dong/catkin_ws/build
+CMAKE_BINARY_DIR = /home/dong/myroom/catkin_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build: sensor_msgs_gene
 .PHONY : opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 
 opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	cd /home/dong/catkin_ws/build/opencv && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/dong/myroom/catkin_ws/build/opencv && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/dong/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/catkin_ws/src /home/dong/catkin_ws/src/opencv /home/dong/catkin_ws/build /home/dong/catkin_ws/build/opencv /home/dong/catkin_ws/build/opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dong/myroom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/myroom/catkin_ws/src /home/dong/myroom/catkin_ws/src/opencv /home/dong/myroom/catkin_ws/build /home/dong/myroom/catkin_ws/build/opencv /home/dong/myroom/catkin_ws/build/opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : opencv/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 

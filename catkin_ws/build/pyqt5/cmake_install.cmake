@@ -1,8 +1,8 @@
-# Install script for directory: /home/dong/catkin_ws/src/pyqt5
+# Install script for directory: /home/dong/myroom/catkin_ws/src/pyqt5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dong/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dong/myroom/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/myroom/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pyqt5/cmake" TYPE FILE FILES
-    "/home/dong/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5Config.cmake"
-    "/home/dong/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5Config-version.cmake"
+    "/home/dong/myroom/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5Config.cmake"
+    "/home/dong/myroom/catkin_ws/build/pyqt5/catkin_generated/installspace/pyqt5Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pyqt5" TYPE FILE FILES "/home/dong/catkin_ws/src/pyqt5/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pyqt5" TYPE FILE FILES "/home/dong/myroom/catkin_ws/src/pyqt5/package.xml")
 endif()
 

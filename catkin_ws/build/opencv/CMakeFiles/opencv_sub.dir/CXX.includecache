@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dong/catkin_ws/src/opencv/src/sub.cpp
+/home/dong/myroom/catkin_ws/src/opencv/src/sub.cpp
 ros/ros.h
 -
 opencv2/opencv.hpp

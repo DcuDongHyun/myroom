@@ -46,8 +46,29 @@ class Car_Follower():
         # points[:, 0] = x축 값 , points[:, 1] = y축 값 , points[:, 2] = z축 값
 
         #z축 값 추출 1차원 배열로 재배열
-        Zaxis=points[:,2].reshape(-1)
-        print("개수 \n",Zaxis[-1])
+        # Zaxis=points[:,2].reshape(-1)
+
+        '''
+        x,y 축 만 추출 후 0값을 inf로 바꾸는 코드 (23.01.08) 추후 의미없으면 삭제 예정 
+        xyaxis = np.delete(points, 2, axis=1)
+        print("자료형 : ", type(xyaxis))
+        print("개수 \n",xyaxis)
+        # 0값을 inf처리
+        refined_xyaxis = np.where(xyaxis == 0, float("inf"), xyaxis)
+        print("정제 자료형 : ", type(refined_xyaxis))
+        print("정제 개수 \n", refined_xyaxis)
+        '''
+
+        '''re_xaxis, re_yaxis = 0 값 제외한 좌표 측 실제로 물체가 인식되는 라이다 값만 존재하는 1차원 np.array (기울기를 구하기 위해서)'''
+        xaxis = np.delete(points, [1, 2], axis=1)
+        yaxis = np.delete(points, [0, 2], axis=1)
+        re_xaxis= np.delete(xaxis,np.where(xaxis==0))
+        re_yaxis = np.delete(yaxis, np.where(yaxis == 0))
+        # print("정제된 x값\n", re_xaxis)
+        # print("정제된 y값", re_yaxis)
+        # print("x 크기",re_xaxis.size)
+        # print("y 크기", re_yaxis.size)
+
 
         header = Header()
         header.frame_id = "velodyne"

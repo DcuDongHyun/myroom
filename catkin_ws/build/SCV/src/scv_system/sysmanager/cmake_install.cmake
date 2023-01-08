@@ -1,8 +1,8 @@
-# Install script for directory: /home/dong/catkin_ws/src/SCV/src/scv_system/sysmanager
+# Install script for directory: /home/dong/myroom/catkin_ws/src/SCV/src/scv_system/sysmanager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dong/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dong/myroom/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanager.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanager.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sysmanager/cmake" TYPE FILE FILES
-    "/home/dong/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanagerConfig.cmake"
-    "/home/dong/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanagerConfig-version.cmake"
+    "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanagerConfig.cmake"
+    "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/sysmanager/catkin_generated/installspace/sysmanagerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sysmanager" TYPE FILE FILES "/home/dong/catkin_ws/src/SCV/src/scv_system/sysmanager/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sysmanager" TYPE FILE FILES "/home/dong/myroom/catkin_ws/src/SCV/src/scv_system/sysmanager/package.xml")
 endif()
 

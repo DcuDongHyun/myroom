@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dong/catkin_ws/devel/lib/scv_control/scv_pub"
-  "/home/dong/catkin_ws/devel/lib/scv_control/scv_pub.pdb"
+  "/home/dong/myroom/catkin_ws/devel/lib/scv_control/scv_pub"
+  "/home/dong/myroom/catkin_ws/devel/lib/scv_control/scv_pub.pdb"
   "CMakeFiles/scv_pub.dir/src/control_cpp/publisher.cpp.o"
 )
 

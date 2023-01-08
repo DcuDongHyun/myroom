@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dong/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/dong/myroom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dong/catkin_ws/build
+CMAKE_BINARY_DIR = /home/dong/myroom/catkin_ws/build
 
 # Utility rule file for _morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dong/catkin_ws/build
 include morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/progress.make
 
 morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv:
-	cd /home/dong/catkin_ws/build/morai_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py morai_msgs /home/dong/catkin_ws/src/morai_msgs/srv/MoraiSyncModeAddObjectSrv.srv morai_msgs/SyncModeAddObject:geometry_msgs/Vector3:morai_msgs/SyncModeResultResponse
+	cd /home/dong/myroom/catkin_ws/build/morai_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py morai_msgs /home/dong/myroom/catkin_ws/src/morai_msgs/srv/MoraiSyncModeAddObjectSrv.srv morai_msgs/SyncModeAddObject:morai_msgs/SyncModeResultResponse:geometry_msgs/Vector3
 
 _morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv: morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv
 _morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv: morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/build.make
@@ -67,10 +67,10 @@ morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddO
 .PHONY : morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/build
 
 morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/clean:
-	cd /home/dong/catkin_ws/build/morai_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/cmake_clean.cmake
+	cd /home/dong/myroom/catkin_ws/build/morai_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/cmake_clean.cmake
 .PHONY : morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/clean
 
 morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/depend:
-	cd /home/dong/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/catkin_ws/src /home/dong/catkin_ws/src/morai_msgs /home/dong/catkin_ws/build /home/dong/catkin_ws/build/morai_msgs /home/dong/catkin_ws/build/morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dong/myroom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/myroom/catkin_ws/src /home/dong/myroom/catkin_ws/src/morai_msgs /home/dong/myroom/catkin_ws/build /home/dong/myroom/catkin_ws/build/morai_msgs /home/dong/myroom/catkin_ws/build/morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : morai_msgs/CMakeFiles/_morai_msgs_generate_messages_check_deps_MoraiSyncModeAddObjectSrv.dir/depend
 

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/dong/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/publisher.cpp
+/home/dong/myroom/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/publisher.cpp
 ros/ros.h
-/home/dong/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/ros/ros.h
+/home/dong/myroom/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/ros/ros.h
 std_msgs/String.h
-/home/dong/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/std_msgs/String.h
+/home/dong/myroom/catkin_ws/src/SCV/src/scv_system/scv_control/src/control_cpp/std_msgs/String.h
 sstream
 -
 

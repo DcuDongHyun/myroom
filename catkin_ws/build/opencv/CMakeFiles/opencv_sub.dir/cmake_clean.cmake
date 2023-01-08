@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dong/catkin_ws/devel/lib/opencv/opencv_sub"
-  "/home/dong/catkin_ws/devel/lib/opencv/opencv_sub.pdb"
+  "/home/dong/myroom/catkin_ws/devel/lib/opencv/opencv_sub"
+  "/home/dong/myroom/catkin_ws/devel/lib/opencv/opencv_sub.pdb"
   "CMakeFiles/opencv_sub.dir/src/sub.cpp.o"
 )
 

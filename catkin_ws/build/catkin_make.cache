@@ -1,2 +1,2 @@
 SCV/src/scv_system/data_analyze:SCV/src/scv_system/global_path:SCV/src/scv_system/local_path:SCV/src/scv_system/localization:SCV/src/scv_system/perception:SCV/src/scv_system/scv_control:SCV/src/scv_system/sysmanager:morai_msgs:opencv:pyqt5
--DCATKIN_DEVEL_PREFIX=/home/dong/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dong/catkin_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/dong/myroom/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dong/myroom/catkin_ws/install -G Unix Makefiles

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dong/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/dong/myroom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dong/catkin_ws/build
+CMAKE_BINARY_DIR = /home/dong/myroom/catkin_ws/build
 
 # Utility rule file for morai_msgs_geneus.
 
@@ -63,10 +63,10 @@ morai_msgs/CMakeFiles/morai_msgs_geneus.dir/build: morai_msgs_geneus
 .PHONY : morai_msgs/CMakeFiles/morai_msgs_geneus.dir/build
 
 morai_msgs/CMakeFiles/morai_msgs_geneus.dir/clean:
-	cd /home/dong/catkin_ws/build/morai_msgs && $(CMAKE_COMMAND) -P CMakeFiles/morai_msgs_geneus.dir/cmake_clean.cmake
+	cd /home/dong/myroom/catkin_ws/build/morai_msgs && $(CMAKE_COMMAND) -P CMakeFiles/morai_msgs_geneus.dir/cmake_clean.cmake
 .PHONY : morai_msgs/CMakeFiles/morai_msgs_geneus.dir/clean
 
 morai_msgs/CMakeFiles/morai_msgs_geneus.dir/depend:
-	cd /home/dong/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/catkin_ws/src /home/dong/catkin_ws/src/morai_msgs /home/dong/catkin_ws/build /home/dong/catkin_ws/build/morai_msgs /home/dong/catkin_ws/build/morai_msgs/CMakeFiles/morai_msgs_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dong/myroom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/myroom/catkin_ws/src /home/dong/myroom/catkin_ws/src/morai_msgs /home/dong/myroom/catkin_ws/build /home/dong/myroom/catkin_ws/build/morai_msgs /home/dong/myroom/catkin_ws/build/morai_msgs/CMakeFiles/morai_msgs_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : morai_msgs/CMakeFiles/morai_msgs_geneus.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dong/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/dong/myroom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dong/catkin_ws/build
+CMAKE_BINARY_DIR = /home/dong/myroom/catkin_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodej
 .PHONY : SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 
 SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/dong/catkin_ws/build/SCV/src/scv_system/data_analyze && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/dong/myroom/catkin_ws/build/SCV/src/scv_system/data_analyze && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/dong/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/catkin_ws/src /home/dong/catkin_ws/src/SCV/src/scv_system/data_analyze /home/dong/catkin_ws/build /home/dong/catkin_ws/build/SCV/src/scv_system/data_analyze /home/dong/catkin_ws/build/SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dong/myroom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dong/myroom/catkin_ws/src /home/dong/myroom/catkin_ws/src/SCV/src/scv_system/data_analyze /home/dong/myroom/catkin_ws/build /home/dong/myroom/catkin_ws/build/SCV/src/scv_system/data_analyze /home/dong/myroom/catkin_ws/build/SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : SCV/src/scv_system/data_analyze/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 

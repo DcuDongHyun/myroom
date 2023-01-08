@@ -1,4 +1,4 @@
-prefix=/home/dong/catkin_ws/install
+prefix=/home/dong/myroom/catkin_ws/install
 
 Name: global_path
 Description: Description of global_path

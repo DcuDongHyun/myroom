@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;std_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lscv_control".split(';') if "-lscv_control" != "" else []
 PROJECT_NAME = "scv_control"
-PROJECT_SPACE_DIR = "/home/dong/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/dong/myroom/catkin_ws/install"
 PROJECT_VERSION = "0.0.1"

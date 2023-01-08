@@ -1,8 +1,8 @@
-# Install script for directory: /home/dong/catkin_ws/src/SCV/src/scv_system/localization
+# Install script for directory: /home/dong/myroom/catkin_ws/src/SCV/src/scv_system/localization
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dong/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dong/myroom/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localization.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localization.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization/cmake" TYPE FILE FILES
-    "/home/dong/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localizationConfig.cmake"
-    "/home/dong/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localizationConfig-version.cmake"
+    "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localizationConfig.cmake"
+    "/home/dong/myroom/catkin_ws/build/SCV/src/scv_system/localization/catkin_generated/installspace/localizationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization" TYPE FILE FILES "/home/dong/catkin_ws/src/SCV/src/scv_system/localization/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization" TYPE FILE FILES "/home/dong/myroom/catkin_ws/src/SCV/src/scv_system/localization/package.xml")
 endif()
 

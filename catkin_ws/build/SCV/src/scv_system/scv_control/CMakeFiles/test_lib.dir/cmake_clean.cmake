@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dong/catkin_ws/devel/lib/libtest_lib.a"
-  "/home/dong/catkin_ws/devel/lib/libtest_lib.pdb"
+  "/home/dong/myroom/catkin_ws/devel/lib/libtest_lib.a"
+  "/home/dong/myroom/catkin_ws/devel/lib/libtest_lib.pdb"
   "CMakeFiles/test_lib.dir/src/control_cpp/test_library.cpp.o"
 )
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/dong/catkin_ws/src/opencv
+# Install script for directory: /home/dong/myroom/catkin_ws/src/opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dong/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dong/myroom/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/catkin_ws/build/opencv/catkin_generated/installspace/opencv.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dong/myroom/catkin_ws/build/opencv/catkin_generated/installspace/opencv.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv/cmake" TYPE FILE FILES
-    "/home/dong/catkin_ws/build/opencv/catkin_generated/installspace/opencvConfig.cmake"
-    "/home/dong/catkin_ws/build/opencv/catkin_generated/installspace/opencvConfig-version.cmake"
+    "/home/dong/myroom/catkin_ws/build/opencv/catkin_generated/installspace/opencvConfig.cmake"
+    "/home/dong/myroom/catkin_ws/build/opencv/catkin_generated/installspace/opencvConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv" TYPE FILE FILES "/home/dong/catkin_ws/src/opencv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv" TYPE FILE FILES "/home/dong/myroom/catkin_ws/src/opencv/package.xml")
 endif()
 

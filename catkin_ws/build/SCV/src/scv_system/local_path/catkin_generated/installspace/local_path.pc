@@ -1,4 +1,4 @@
-prefix=/home/dong/catkin_ws/install
+prefix=/home/dong/myroom/catkin_ws/install
 
 Name: local_path
 Description: Description of local_path
