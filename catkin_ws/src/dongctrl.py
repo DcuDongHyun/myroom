@@ -68,6 +68,13 @@ class Car_Follower():
         # print("정제된 y값", re_yaxis)
         # print("x 크기",re_xaxis.size)
         # print("y 크기", re_yaxis.size)
+        print("최소 기울기? ",min(re_yaxis)/min(re_xaxis))
+        print("최대 기울기? ", max(re_yaxis) / max(re_xaxis))
+
+
+        for i in range(re_xaxis.size):
+            if -1< re_yaxis[i]/re_xaxis[i] < 1:
+                #차량 제어 부분만 추가 하면 될듯(밑에 교수님 함수 활용해서 추가 하면 ...끝..?
 
 
         header = Header()
