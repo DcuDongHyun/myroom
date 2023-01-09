@@ -10,6 +10,8 @@ from sensor_msgs.msg import LaserScan , PointCloud2, PointField
 from sensor_msgs import point_cloud2
 from std_msgs.msg import Float64 , Header
 #from hunterctrl import hunterCtrl
+import math
+
 
 class Car_Follower():
     def __init__(self):
@@ -68,13 +70,19 @@ class Car_Follower():
         # print("정제된 y값", re_yaxis)
         # print("x 크기",re_xaxis.size)
         # print("y 크기", re_yaxis.size)
-        '''xy는 각 인덱스 별 (0,0)과 인덱스의 x,y좌표 기울기 계산 결과 저장'''
+        '''xy는 각 인덱스 별 (0,0)과 인덱스의 x,y좌표 기울기 계산 결과 저장
+        xypoint는 각 인덱스 별 원점(0,0)과 x,y좌표 사이의 거리'''
         xy=[]
+        xypoint=[]
+
         for i in range(re_xaxis.size):
             xy.append(re_yaxis[i]/re_xaxis[i])
+            xypoint.append(math.sqrt((re_xaxis[i]**2)+(re_yaxis[i]**2)))
 
-        print("최소 기울기? ", min(xy))
-        print("최대 기울기? ", max(xy))
+        print("최소 기울기 ", min(xy))
+        print("최대 기울기 ", max(xy))
+        print("최소 거리 ", min(xypoint))
+        print("최대 거리 ", max(xypoint))
 
 
         header = Header()
