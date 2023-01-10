@@ -75,9 +75,11 @@ class Car_Follower():
         xy=[]
         xypoint=[]
 
-        for i in range(re_xaxis.size):
+        for i in range(re_xaxis.size and re_yaxis.size):
             xy.append(re_yaxis[i]/re_xaxis[i])
             xypoint.append(math.sqrt((re_xaxis[i]**2)+(re_yaxis[i]**2)))
+        if min(xypoint) < 1.5:
+            keyinput()
 
         print("최소 기울기 ", min(xy))
         print("최대 기울기 ", max(xy))
@@ -92,6 +94,10 @@ class Car_Follower():
         self.lidar_pub3D.publish(scan)
 
     def keyinput(id, moraictl:moraiCtrl):
+        """def keyinput(id, moraictl:moraiCtrl)에서
+        moraictl:moraiCtrl은 파이썬 주석(Function annotation)이라 하며
+        앞 부분의 메개변수에 대한 주석 따라서, moraictl은 moraiCtrl이라고 설명 해주는 부분
+        """
         flag = True
         while flag:
             inpdata = input('input value: ').split()
@@ -110,9 +116,6 @@ class Car_Follower():
                 moraictl.setSteeringAngle(value)
 
 
-        print('keyinput has been died')
-
-
 if __name__ == '__main__':
     mct = moraiCtrl()
     Car_Follower()
@@ -122,3 +125,26 @@ if __name__ == '__main__':
     mct.runCtrl()
     th1.join()
     print('process is all done')
+
+
+    '''
+        def keyinput(id, moraictl:moraiCtrl):
+        flag = True
+        while flag:
+            inpdata = input('input value: ').split()
+            command = int(inpdata[0])
+            value = int(inpdata[1])
+
+            if command == -1:
+                flag = False
+            elif command == 0:
+                moraictl.emergencyBrake(True)
+                moraictl.setTargetSpeed(0)
+            elif command == 1:
+                moraictl.emergencyBrake(False)
+                moraictl.setTargetSpeed(value)
+            elif command == 2:
+                moraictl.setSteeringAngle(value)
+
+
+        print('keyinput has been died') '''
