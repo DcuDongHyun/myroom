@@ -1,0 +1,4 @@
+<launch>
+    <arg name="map" default="$(find ta_lab5)/maps/20210715_slowhallway_4.yaml"/>
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map)" />
+</launch>
