@@ -1,0 +1,8 @@
+prefix=/home/wecar/ROS_wecar/wecar_ws/install
+
+Name: wecar
+Description: Description of wecar
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

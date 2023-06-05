@@ -1,0 +1,8 @@
+prefix=/home/wecar/ROS_wecar/wecar_ws/devel
+
+Name: car_driver
+Description: Description of car_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

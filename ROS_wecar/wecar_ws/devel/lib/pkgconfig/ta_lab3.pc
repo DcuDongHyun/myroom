@@ -1,0 +1,8 @@
+prefix=/home/wecar/ROS_wecar/wecar_ws/devel
+
+Name: ta_lab3
+Description: Description of ta_lab3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

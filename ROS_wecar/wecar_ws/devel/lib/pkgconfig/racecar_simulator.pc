@@ -1,0 +1,8 @@
+prefix=/home/wecar/ROS_wecar/wecar_ws/devel
+
+Name: racecar_simulator
+Description: Description of racecar_simulator
+Version: 0.0.0
+Cflags: -I/home/wecar/ROS_wecar/wecar_ws/src/racecar_simulator/include
+Libs: -L${prefix}/lib -lracecar_simulator
+Requires: 
